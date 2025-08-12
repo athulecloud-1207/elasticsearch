@@ -27,4 +27,4 @@ volumes:
   class: microk8s-hostpath      
 
 properties:
-  revision : 00
+  revision : 01
