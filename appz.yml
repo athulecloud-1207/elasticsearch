@@ -1,7 +1,7 @@
 app:
   name: AppzElasticsearch
   code: AES
-  notify: appz@cloudbourne.co
+  notify: asunil@ecloudcontrol.com
 
 build:
   version: 8.15
@@ -11,7 +11,7 @@ build:
   image_template: elasticsearch-8.15
 
 deploy:
-  context: alpha/DEV
+  context: athulecloud-1207/DEV
   type: elasticsearch6  
   replicas: 1
   port:
@@ -24,10 +24,7 @@ volumes:
   name: elasticsearch-data
   size: 20Gi
   mode: ReadWriteOnce
-  class: microk8s-hostpath
-
-monitor:
-  notify: appzops@cloudbourne.co      
+  class: microk8s-hostpath      
 
 properties:
   revision : 00
