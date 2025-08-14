@@ -27,5 +27,5 @@ volumes:
     class: microk8s-hostpath
 
 properties:
-  revision: 04
+  revision: 05
   JAVA_HEAPSIZE: 2g
