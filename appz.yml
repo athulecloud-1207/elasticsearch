@@ -28,3 +28,4 @@ volumes:
 
 properties:
   revision : 01
+  JAVA_HEAPSIZE : 2g
