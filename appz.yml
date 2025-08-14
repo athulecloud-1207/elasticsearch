@@ -1,7 +1,7 @@
 app:
   name: AppzElasticsearch
   code: AES
-  notify: asunil@ecloudcontrol.com
+  notify: "asunil@ecloudcontrol.com"
 
 build:
   version: 8.15
@@ -12,20 +12,20 @@ build:
 
 deploy:
   context: athulecloud-1207/DEV
-  type: elasticsearch6  
+  type: elasticsearch6
   replicas: 1
   port:
-  - 9200
-  - 9300
+    - 9200
+    - 9300
 
 volumes:
-- claim: elasticsearch-data
-  mount: /appz/data
-  name: elasticsearch-data
-  size: 20Gi
-  mode: ReadWriteOnce
-  class: microk8s-hostpath      
+  - claim: elasticsearch-data
+    mount: /appz/data
+    name: elasticsearch-data
+    size: 20Gi
+    mode: ReadWriteOnce
+    class: microk8s-hostpath
 
 properties:
-  revision : 03
-  JAVA_HEAPSIZE : 2g
+  revision: "03"
+  JAVA_HEAPSIZE: 2g
