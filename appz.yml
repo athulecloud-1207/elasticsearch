@@ -27,6 +27,6 @@ volumes:
     class: microk8s-hostpath
 
 properties:
-  revision: 07
+  revision: 08
   JAVA_HEAPSIZE: 2g
   ELASTIC_PASSWORD: 123 
