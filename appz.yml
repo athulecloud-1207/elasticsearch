@@ -30,3 +30,8 @@ properties:
   revision: 08
   JAVA_HEAPSIZE: 2g
   ELASTIC_PASSWORD: 123 
+  HTTP_HOST: 0.0.0.0
+  XPACK_SECURITY_ENABLED: false
+  
+  
+  
