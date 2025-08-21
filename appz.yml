@@ -29,9 +29,6 @@ volumes:
 properties:
   revision: 10
   JAVA_HEAPSIZE: 2g
-  ELASTIC_PASSWORD: 123 
-  http.host: "0.0.0.0"
-  xpack.security.enabled: "false"
   
   
   
