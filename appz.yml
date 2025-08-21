@@ -27,11 +27,11 @@ volumes:
     class: microk8s-hostpath
 
 properties:
-  revision: 09
+  revision: 10
   JAVA_HEAPSIZE: 2g
   ELASTIC_PASSWORD: 123 
-  HTTP_HOST: 0.0.0.0
-  XPACK_SECURITY_ENABLED: false
+  http.host: "0.0.0.0"
+  xpack.security.enabled: "false"
   
   
   
